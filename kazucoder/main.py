@@ -23,9 +23,9 @@ with open('test1.txt','r',encoding='utf-8') as f:
             line = line.decode().strip()
             #if len(line) > 0: # 最後にバッファから空文字が大量に吐き出される？対策
                 #f.write(line+'\n')
-            print(line) # リアルタイムか確認用に日時も出力
+            print(line)
 
         # 子の終了
         if p.poll() is not None:
             break
-print('正常に再起動しました')
+print('CLEAR')
